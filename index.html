@@ -1,0 +1,63 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+<meta charset="UTF-8">  
+<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+<title>Replace Image with Button</title>  
+<style>  
+   body {  
+        display: flex;  
+        flex-direction: column;  
+        align-items: center;  
+        justify-content: center;  
+        height: 100vh; /* Center the content vertically */  
+        margin: 0;  
+        font-family: Arial, sans-serif;  
+    }  
+      
+    .image-container {  
+        text-align: center; /* Horizontal centering */  
+        margin-bottom: 20px; /* Add some spacing to the buttons */  
+    }  
+      
+    .image-center img {  
+        display: block; /* Eliminate the default spacing at the bottom of the picture */  
+        width: 20%;   
+    }  
+      
+    .centered-text {  
+        margin: 0; /* Eliminate the default margins of text */  
+    }  
+      
+    .button-container {  
+        text-align: center; /* The button is centered horizontally */  
+    }  
+      
+    button {  
+        padding: 10px 20px; /* Add padding to the button */  
+        font-size: 16px; /* Set the button text size */  
+        cursor: pointer;   
+    }  
+</style>  
+</head>  
+<body>  
+  
+    <div class="centered-text">  
+        <h2>My name is Linet and Lin Na</h2>
+          <p>This is my attractive image using box model</p>  
+      </div> 
+  <div class="image-container">  
+          <img id="myImage" src="1.jpg" alt="My Attractive Image"style="width: 300px; height: auto;">  
+      </div> 
+      <div class="button-container">  
+          <button onclick="replaceImage()">Replace Image</button>  
+      </div> 
+<script>  
+function replaceImage() {       
+    var myImage = document.getElementById('myImage');    
+    myImage.src = "2.jpg";    
+} 
+</script>  
+  
+</body>  
+</html>
